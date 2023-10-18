@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 app.all('/', (req, res) => {
     console.log("Just got a request!")
-    res.send('Yo!')
+    res.send('hello world')
 })
 
 app.all('/api/scholarship/login', (req, res) => {
