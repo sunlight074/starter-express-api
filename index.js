@@ -5,7 +5,7 @@ app.all('/', (req, res) => {
     res.send('hello world')
 })
 
-app.all('/api/scholarship/login', (req, res) => {
+app.post('/api/scholarship/login', (req, res) => {
     console.log("Just got a request!")
     res.send({result : {accessToken : 'hello accessToken'}})
 })
